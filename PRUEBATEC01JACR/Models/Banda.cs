@@ -14,6 +14,7 @@ namespace PRUEBATEC01JACR.Models
         public string? Nombre { get; set; }
         public string? Genero { get; set; }
         public int? AñoFormacion { get; set; }
+        public byte[]? Imagen { get; set; }
 
         public virtual ICollection<Musico> Musicos { get; set; }
     }

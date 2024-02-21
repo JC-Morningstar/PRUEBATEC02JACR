@@ -43,6 +43,8 @@ namespace PRUEBATEC01JACR.Models
                     .IsUnicode(false)
                     .HasColumnName("genero");
 
+                entity.Property(e => e.Imagen).HasColumnName("imagen");
+
                 entity.Property(e => e.Nombre)
                     .HasMaxLength(50)
                     .IsUnicode(false)
