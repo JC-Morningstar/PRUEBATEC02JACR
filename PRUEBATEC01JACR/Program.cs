@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using PRUEBATEC01JACR.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-builder.Services.AddDbContext<DbContext>(options =>
+builder.Services.AddDbContext<DdContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("conn")));
 
 
